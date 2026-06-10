@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: "Vilbert TP | Terrassement · Voirie · Réseaux — Somme (80) Hauts-de-France",
@@ -86,6 +87,7 @@ const engagements = [
 ];
 
 export default function Home() {
+  const latestPosts = blogPosts.slice(0, 3);
   return (
     <>
       {/* HERO */}
@@ -332,6 +334,68 @@ export default function Home() {
               className="inline-block border-2 border-[#b5451b] text-[#b5451b] font-bold px-8 py-3 rounded hover:bg-[#b5451b] hover:text-white transition-colors"
             >
               Voir toutes les réalisations →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3">
+              Guides & <span className="text-[#b5451b]">conseils travaux</span>
+            </h2>
+            <div className="w-16 h-1 bg-[#f5b800] mx-auto mb-4" />
+            <p className="text-gray-600">Nos experts partagent leurs connaissances pour vous aider à préparer vos projets.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            {latestPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group bg-gray-50 rounded-xl overflow-hidden border border-gray-100 hover:shadow-md transition-all"
+              >
+                <div className="relative aspect-video overflow-hidden bg-gray-200">
+                  <Image src={post.image} alt={post.imageAlt} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(min-width: 768px) 33vw, 100vw" />
+                  <div className="absolute top-2 left-2">
+                    <span className="bg-[#b5451b] text-white text-xs font-bold px-2 py-0.5 rounded">{post.category}</span>
+                  </div>
+                </div>
+                <div className="p-5">
+                  <p className="text-xs text-gray-400 mb-2">⏱️ {post.readingTime} min · {new Date(post.date).toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}</p>
+                  <h3 className="font-black text-gray-900 leading-tight group-hover:text-[#b5451b] transition-colors">{post.title}</h3>
+                  <p className="text-gray-500 text-xs mt-2 line-clamp-2">{post.excerpt}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link href="/blog" className="inline-block border-2 border-[#b5451b] text-[#b5451b] font-bold px-8 py-3 rounded hover:bg-[#b5451b] hover:text-white transition-colors">
+              Voir tous les articles →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* MASE */}
+      <section className="py-12 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 justify-center">
+          <Image
+            src="/Logo-Mase-Hdf-2019-baseline.jpg"
+            alt="Certification MASE Hauts-de-France — Vilbert TP"
+            width={180}
+            height={90}
+            className="object-contain bg-white rounded-xl p-3"
+          />
+          <div className="text-center md:text-left">
+            <h2 className="text-xl font-black text-[#f5b800] mb-2">Entreprise certifiée MASE Hauts-de-France</h2>
+            <p className="text-gray-300 max-w-xl">
+              La certification MASE atteste de notre engagement pour la sécurité des hommes, la qualité de nos interventions
+              et le respect de l'environnement sur chaque chantier.
+            </p>
+            <Link href="/blog/certification-mase-engagement-securite-vilbert-tp" className="inline-block mt-3 text-[#f5b800] font-bold hover:underline text-sm">
+              En savoir plus sur notre démarche MASE →
             </Link>
           </div>
         </div>

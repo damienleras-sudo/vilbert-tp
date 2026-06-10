@@ -121,7 +121,7 @@ export default function Footer() {
             Contact
           </h3>
           <address className="not-italic text-gray-400 text-sm space-y-2">
-            <p>📍 Route nationale, 80630 Beauval</p>
+            <p>📍 Ruelle Mayeux, 80260 Talmas</p>
             <p>
               📞{" "}
               <a href="tel:0322930286" className="hover:text-white transition-colors">

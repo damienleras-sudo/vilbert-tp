@@ -73,8 +73,8 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
               <span className="text-4xl">📍</span>
               <h3 className="font-black text-gray-900 mt-3 mb-1">Adresse</h3>
-              <p className="text-gray-600 text-sm">Route nationale</p>
-              <p className="text-gray-600 text-sm">80630 Beauval</p>
+              <p className="text-gray-600 text-sm">Ruelle Mayeux</p>
+              <p className="text-gray-600 text-sm">80260 Talmas</p>
               <a
                 href="https://share.google/AiI8apyJiUMyka8p9"
                 target="_blank"
@@ -83,6 +83,7 @@ export default function ContactPage() {
               >
                 Voir sur Google Maps →
               </a>
+              <p className="text-gray-400 text-xs mt-1">(Accès via la RD938)</p>
             </div>
 
             {/* Horaires */}

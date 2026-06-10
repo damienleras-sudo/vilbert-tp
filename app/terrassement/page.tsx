@@ -99,8 +99,8 @@ export default function TerrassementPage() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ height: 400 }}>
             <Image
-              src="/terrassement.jpg"
-              alt="Terrassement Vilbert TP — pelle mécanique sur chantier Hauts-de-France"
+              src="/terrassementgrandchantier.jpg"
+              alt="Terrassement grand chantier Vilbert TP — pelle mécanique Hauts-de-France"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"

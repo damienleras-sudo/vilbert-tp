@@ -13,15 +13,15 @@ export default function SchemaOrg() {
         email: "tp@groupe-vilbert.fr",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Route nationale",
-          addressLocality: "Beauval",
-          postalCode: "80630",
+          streetAddress: "Ruelle Mayeux",
+          addressLocality: "Talmas",
+          postalCode: "80260",
           addressCountry: "FR",
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 50.083,
-          longitude: 2.167,
+          latitude: 50.1167,
+          longitude: 2.3833,
         },
         openingHoursSpecification: [
           {
