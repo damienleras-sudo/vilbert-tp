@@ -127,7 +127,20 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Photo hero */}
+            {/* Photo hero mobile */}
+            <div className="lg:hidden relative rounded-2xl overflow-hidden shadow-xl w-full" style={{ height: 240 }}>
+              <Image
+                src="/hero.jpg"
+                alt="Chantier Vilbert TP — terrassement et travaux publics en Hauts-de-France"
+                fill
+                priority
+                className="object-cover"
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            </div>
+
+            {/* Photo hero desktop */}
             <div className="hidden lg:block relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: 420 }}>
               <Image
                 src="/hero.jpg"

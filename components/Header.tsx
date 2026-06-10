@@ -51,9 +51,10 @@ export default function Header() {
               <span>📞</span>
               <span>03 22 93 02 86</span>
             </a>
-            <a href="mailto:tp@groupe-vilbert.fr" className="hidden md:flex items-center gap-1.5 hover:text-[#f5b800] transition-colors">
+            <a href="mailto:tp@groupe-vilbert.fr" className="flex items-center gap-1.5 hover:text-[#f5b800] transition-colors">
               <span>✉️</span>
-              <span>tp@groupe-vilbert.fr</span>
+              <span className="hidden sm:inline">tp@groupe-vilbert.fr</span>
+              <span className="sm:hidden text-xs">Email</span>
             </a>
           </div>
           <div className="flex items-center gap-3 flex-wrap text-xs">
