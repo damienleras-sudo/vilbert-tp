@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: BASE_URL },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: "2CyvZLz9FmqlG3Gl85TYQtFbRFAUfQd-Pc0NUFVGQpM",
   },
 };
 
