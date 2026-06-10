@@ -24,6 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${BASE_URL}/a-propos`, priority: 0.6, changeFrequency: "yearly" as const },
     { url: `${BASE_URL}/contact`, priority: 0.8, changeFrequency: "yearly" as const },
+    { url: `${BASE_URL}/terrassement-amiens`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/terrassement-abbeville`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/terrassement-peronne`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/travaux-publics-somme`, priority: 0.9, changeFrequency: "monthly" as const },
     ...blogPosts.map((p) => ({
       url: `${BASE_URL}/blog/${p.slug}`,
       priority: 0.7,
