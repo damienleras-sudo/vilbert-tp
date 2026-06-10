@@ -52,6 +52,27 @@ const clientTypes = [
   { icon: "🏗️", title: "Professionnels & BTP", desc: "Viabilisation, VRD, terrassement grands volumes.", cta: "Nous contacter", href: "/contact" },
 ];
 
+const temoignages = [
+  {
+    nom: "Mairie de Talmas",
+    type: "Collectivité",
+    texte: "Vilbert TP intervient sur notre voirie communale depuis plusieurs années. Sérieux, ponctualité et finitions soignées. Un partenaire de confiance.",
+    note: 5,
+  },
+  {
+    nom: "Exploitation agricole — Somme",
+    type: "Professionnel",
+    texte: "Terrassement de notre plateforme de stockage avec le bulldozer GPS. Résultat parfaitement plan au premier passage. Impressionnant.",
+    note: 5,
+  },
+  {
+    nom: "Particulier — Amiens",
+    type: "Particulier",
+    texte: "Création d'une allée enrobée et d'un enrochement de jardin. Équipe sympathique, délai tenu, rendu impeccable. Je recommande.",
+    note: 5,
+  },
+];
+
 const specialites = [
   { icon: "🏛️", label: "Fouilles archéologiques", sub: "Partenaire INRAP", href: "/fouilles-archeologiques" },
   { icon: "⚠️", label: "Zones risque obus", sub: "Agents formés Picardie", href: "/fouilles-archeologiques" },
@@ -258,6 +279,36 @@ export default function Home() {
                 <h3 className="font-black text-white text-xs md:text-sm group-hover:text-[#f5b800] transition-colors leading-tight">{s.label}</h3>
                 <p className="text-gray-400 text-xs mt-1">{s.sub}</p>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ TÉMOIGNAGES ═══ */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-8 md:mb-10">
+            <h2 className="text-2xl md:text-4xl font-black text-gray-900 mb-3">
+              Ce que disent nos <span className="text-[#b5451b]">clients</span>
+            </h2>
+            <div className="w-16 h-1 bg-[#f5b800] mx-auto mb-4" />
+            <div className="flex justify-center gap-1 mb-2">
+              {"★★★★★".split("").map((s, i) => <span key={i} className="text-[#f5b800] text-2xl">{s}</span>)}
+            </div>
+            <p className="text-gray-500 text-sm">Collectivités, professionnels et particuliers nous font confiance depuis +30 ans</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {temoignages.map((t) => (
+              <div key={t.nom} className="bg-gray-50 rounded-2xl p-6 border border-gray-100 flex flex-col gap-4">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: t.note }).map((_, i) => <span key={i} className="text-[#f5b800]">★</span>)}
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed italic">&ldquo;{t.texte}&rdquo;</p>
+                <div className="mt-auto">
+                  <div className="font-black text-gray-900 text-sm">{t.nom}</div>
+                  <div className="text-xs text-[#b5451b] font-bold uppercase tracking-wide">{t.type}</div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

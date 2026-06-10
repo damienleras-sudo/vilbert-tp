@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import SchemaFAQ from "@/components/SchemaFAQ";
+import SchemaBreadcrumb from "@/components/SchemaBreadcrumb";
 
 export const metadata: Metadata = {
   title: "Voirie & Aménagement Somme (80) | Enrobé, Bordures, Pavage, VRD — Vilbert TP",
@@ -89,6 +91,8 @@ const faqs = [
 export default function VoiriePage() {
   return (
     <>
+      <SchemaFAQ faqs={faqs} pageUrl="https://www.vilbert-tp.fr/voirie" />
+      <SchemaBreadcrumb items={[{ name: "Voirie & Aménagement", href: "/voirie" }]} />
       {/* HERO */}
       <section className="relative bg-[#b5451b] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%)", backgroundSize: "20px 20px" }} />

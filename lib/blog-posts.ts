@@ -12,7 +12,9 @@ export type BlogPost = {
   content: string;
 };
 
-export const blogPosts: BlogPost[] = [
+import { blogPostsExtra } from "./blog-posts-extra";
+
+const blogPostsBase: BlogPost[] = [
   {
     slug: "terrassement-quelles-etapes-pour-votre-projet",
     title: "Terrassement : les étapes clés pour réussir votre projet",
@@ -595,3 +597,7 @@ Oui. La certification MASE est précisément adaptée aux interventions chez des
     `,
   },
 ];
+
+export const blogPosts: BlogPost[] = [...blogPostsBase, ...blogPostsExtra].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
