@@ -101,13 +101,13 @@ export default function Home() {
 
             {/* Photo mobile */}
             <div className="lg:hidden relative rounded-2xl overflow-hidden shadow-xl w-full" style={{ height: 220 }}>
-              <Image src="/DJI_0040.jpg" alt="Vue aérienne chantier Vilbert TP — Hauts-de-France" fill priority className="object-cover" sizes="100vw" />
+              <Image src="/hero.jpg" alt="Chantier Vilbert TP — terrassement Hauts-de-France" fill priority className="object-cover" sizes="100vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             </div>
 
             {/* Photo desktop */}
             <div className="hidden lg:block relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: 440 }}>
-              <Image src="/DJI_0040.jpg" alt="Vue aérienne chantier Vilbert TP — Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
+              <Image src="/hero.jpg" alt="Chantier Vilbert TP — terrassement Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 grid grid-cols-4 divide-x divide-white/20 bg-black/30 backdrop-blur-sm">
                 {chiffres.map((s) => (
