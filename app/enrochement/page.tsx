@@ -26,13 +26,13 @@ const usages = [
     icon: "🏗️",
     titre: "Grands chantiers publics",
     desc: "Vilbert TP intervient sur les grands projets d'infrastructures : protection de remblais routiers, confortement de talus d'ouvrages d'art, protection de fondations contre l'érosion hydraulique, digues et protections de plans d'eau.",
-    img: null,
+    img: "/consolidationdeberge.jpg",
   },
   {
     icon: "🌾",
     titre: "Aménagements agricoles",
     desc: "Protection des fossés et cours d'eau agricoles contre l'érosion des berges, stabilisation d'accès à l'exploitation, création de bassins de rétention renforcés par enrochement.",
-    img: null,
+    img: "/terrassementagricole.jpg",
   },
 ];
 

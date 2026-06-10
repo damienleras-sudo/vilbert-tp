@@ -80,7 +80,7 @@ export default function ExtractionCraiePage() {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl hidden lg:block" style={{ height: 420 }}>
-              <Image src="/terrassementagricole.jpg" alt="Extraction de craie — carrières Vilbert TP Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
+              <Image src="/carrieredecraie.jpg" alt="Carrière de craie — extraction Vilbert TP Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <div className="bg-black/60 rounded-xl p-4">
@@ -92,6 +92,25 @@ export default function ExtractionCraiePage() {
           </div>
         </div>
         <div className="h-1.5 bg-[#f5b800]" />
+      </section>
+
+      {/* GALERIE CARRIÈRE */}
+      <section className="py-10 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-3 gap-3">
+            {[
+              { src: "/carrieredecraie.jpg", label: "Carrière de craie" },
+              { src: "/extractiondecraie.jpg", label: "Extraction en cours" },
+              { src: "/epandagecraie.jpg", label: "Épandage agricole" },
+            ].map((p) => (
+              <div key={p.src} className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "4/3" }}>
+                <Image src={p.src} alt={p.label} fill className="object-cover" sizes="33vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-2 left-2 right-2 text-white text-xs font-bold">{p.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* AVANTAGES CRAIE LOCALE */}

@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const realisations = [
   {
+    titre: "Vue aérienne — terrassement en cours",
+    categorie: "Terrassement",
+    lieu: "Hauts-de-France",
+    desc: "Vue drone d'un chantier de terrassement Vilbert TP — coordination engins et organisation du chantier.",
+    src: "/DJI_0040.jpg",
+  },
+  {
     titre: "Terrassement grand chantier",
     categorie: "Terrassement",
     lieu: "Hauts-de-France",
@@ -17,7 +24,21 @@ const realisations = [
     src: "/terrassementgrandchantier.jpg",
   },
   {
-    titre: "Pose d'enrobé — voirie",
+    titre: "Terrassement plateforme",
+    categorie: "Terrassement",
+    lieu: "Somme (80)",
+    desc: "Création de plateforme par terrassement avec bulldozer GPS — nivellement de précision centimétrique.",
+    src: "/terrassement1.jpg",
+  },
+  {
+    titre: "Voirie — couche de roulement",
+    categorie: "Voirie",
+    lieu: "Somme (80)",
+    desc: "Travaux de voirie avec enrobé bitumeux — finition soignée, reprise d'accotements.",
+    src: "/voirie.jpg",
+  },
+  {
+    titre: "Pose d'enrobé",
     categorie: "Voirie",
     lieu: "Somme (80)",
     desc: "Application de couche de roulement en enrobé bitumeux sur voirie communale.",
@@ -31,11 +52,25 @@ const realisations = [
     src: "/posepave.jpg",
   },
   {
-    titre: "Fosse septique — particulier",
-    categorie: "Travaux Particuliers",
+    titre: "Consolidation de berge",
+    categorie: "Enrochement",
     lieu: "Somme (80)",
-    desc: "Pose complète d'une fosse toutes eaux 3 000 L avec terrassement et raccordements.",
-    src: "/fosseseptique.jpg",
+    desc: "Enrochement et consolidation de berge contre l'érosion — soutènement durable.",
+    src: "/consolidationdeberge.jpg",
+  },
+  {
+    titre: "Enrochement soutènement",
+    categorie: "Enrochement",
+    lieu: "Somme (80)",
+    desc: "Pose d'enrochements pour soutènement et aménagement paysager.",
+    src: "/enrochement.jpg",
+  },
+  {
+    titre: "Réseau assainissement",
+    categorie: "Réseaux",
+    lieu: "Somme (80)",
+    desc: "Pose de réseau d'assainissement — tranchée, tuyaux PVC, remblaiement.",
+    src: "/assainissement.jpg",
   },
   {
     titre: "VRD — réseaux enterrés",
@@ -45,25 +80,32 @@ const realisations = [
     src: "/vrd.jpg",
   },
   {
-    titre: "Création bassin",
-    categorie: "Terrassement",
-    lieu: "Hauts-de-France",
-    desc: "Terrassement et création de bassin de rétention eaux pluviales.",
-    src: "/creationbassin.jpg",
+    titre: "Fosse septique — particulier",
+    categorie: "Travaux Particuliers",
+    lieu: "Somme (80)",
+    desc: "Pose complète d'une fosse toutes eaux 3 000 L avec terrassement et raccordements.",
+    src: "/fosseseptique.jpg",
   },
   {
-    titre: "Travaux particuliers",
+    titre: "Aménagement particulier",
     categorie: "Travaux Particuliers",
     lieu: "Oise (60)",
     desc: "Aménagements extérieurs complets pour particulier — allée, terrasse et enrochement.",
     src: "/travauxparticuliers.jpg",
   },
   {
-    titre: "Enrochement",
-    categorie: "Travaux Particuliers",
-    lieu: "Somme (80)",
-    desc: "Pose d'enrochements pour soutènement et aménagement paysager.",
-    src: "/enrochement.jpg",
+    titre: "Création bassin rétention",
+    categorie: "Terrassement",
+    lieu: "Hauts-de-France",
+    desc: "Terrassement et création de bassin de rétention eaux pluviales.",
+    src: "/creationbassin.jpg",
+  },
+  {
+    titre: "Carrière de craie",
+    categorie: "Extraction",
+    lieu: "Hauts-de-France",
+    desc: "Exploitation de carrière de craie — remblai TP et amendement agricole.",
+    src: "/carrieredecraie.jpg",
   },
   {
     titre: "Terrassement agricole",
@@ -72,9 +114,23 @@ const realisations = [
     desc: "Travaux de terrassement pour exploitation agricole — voirie et plateforme.",
     src: "/terrassementagricole.jpg",
   },
+  {
+    titre: "Prestation agricole",
+    categorie: "Terrassement",
+    lieu: "Somme (80)",
+    desc: "Travaux spécialisés pour exploitations agricoles — drainage, nivellement, plateforme.",
+    src: "/prestationagricole.jpg",
+  },
+  {
+    titre: "Démolition sécurisée",
+    categorie: "Démolition",
+    lieu: "Hauts-de-France",
+    desc: "Démolition sélective avec tri des matériaux et valorisation via Vilbert Recyclage.",
+    src: "/demolitionselective.jpg",
+  },
 ];
 
-const categories = ["Tous", "Terrassement", "Voirie", "Réseaux", "Travaux Particuliers", "Voirie & Réseaux"];
+const categories = ["Tous", "Terrassement", "Voirie", "Réseaux", "Enrochement", "Travaux Particuliers", "Démolition", "Extraction"];
 
 export default function RealisationsPage() {
   return (

@@ -51,7 +51,7 @@ export default function BroyageConcassagePage() {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl hidden lg:block" style={{ height: 420 }}>
-              <Image src="/terrassementgrandchantier.jpg" alt="Broyage et concassage sur chantier — valorisation inertes Vilbert TP" fill priority className="object-cover" sizes="50vw" />
+              <Image src="/broyagesurchantier.jpg" alt="Broyage et concassage sur chantier — valorisation inertes Vilbert TP" fill priority className="object-cover" sizes="50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <div className="bg-black/60 rounded-xl p-4">

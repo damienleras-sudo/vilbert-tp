@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { icon: "🏗️", title: "Terrassement", desc: "Bulldozer GPS, fouilles, remblais, agricole. Pelles jusqu'à 40 t.", href: "/terrassement", img: "/terrassementgrandchantier.jpg" },
-  { icon: "🛣️", title: "Voirie & Aménagement", desc: "Enrobé, pavage, bordures, viabilisation de lotissements.", href: "/voirie", img: "/posedenrobes.jpg" },
-  { icon: "🔧", title: "Réseaux", desc: "Assainissement, eau potable, électricité, gaz, fibre — agents AIPR.", href: "/reseaux", img: "/vrd.jpg" },
-  { icon: "🪨", title: "Enrochement", desc: "Protection littorale, soutènement, jardins, grands chantiers.", href: "/enrochement", img: "/enrochement.jpg" },
+  { icon: "🏗️", title: "Terrassement", desc: "Bulldozer GPS, fouilles, remblais, agricole. Pelles jusqu'à 40 t.", href: "/terrassement", img: "/terrassement1.jpg" },
+  { icon: "🛣️", title: "Voirie & Aménagement", desc: "Enrobé, pavage, bordures, viabilisation de lotissements.", href: "/voirie", img: "/voirie.jpg" },
+  { icon: "🔧", title: "Réseaux", desc: "Assainissement, eau potable, électricité, gaz, fibre — agents AIPR.", href: "/reseaux", img: "/assainissement.jpg" },
+  { icon: "🪨", title: "Enrochement", desc: "Protection littorale, soutènement, jardins, grands chantiers.", href: "/enrochement", img: "/consolidationdeberge.jpg" },
   { icon: "🚜", title: "Location d'engins", desc: "Pelle, bulldozer GPS, mini-pelle — avec chauffeur CACES.", href: "/location-engins", img: "/locationenginavecchauffeur.jpg" },
   { icon: "🏠", title: "Travaux Particuliers", desc: "Allée enrobée, terrasse, clôtures, assainissement individuel.", href: "/travaux-particuliers", img: "/travauxparticuliers.jpg" },
-  { icon: "♻️", title: "Broyage & Valorisation", desc: "Concassage sur site, démolition, Vilbert Recyclage.", href: "/broyage-concassage", img: "/creationbassin.jpg" },
-  { icon: "⛏️", title: "Extraction de craie", desc: "Carrières Hauts-de-France — remblai et agriculture.", href: "/extraction-craie", img: "/terrassementagricole.jpg" },
+  { icon: "♻️", title: "Broyage & Valorisation", desc: "Concassage sur site, démolition, Vilbert Recyclage.", href: "/broyage-concassage", img: "/broyagesurchantier.jpg" },
+  { icon: "⛏️", title: "Extraction de craie", desc: "Carrières Hauts-de-France — remblai et agriculture.", href: "/extraction-craie", img: "/carrieredecraie.jpg" },
 ];
 
 const chiffres = [
@@ -28,9 +28,12 @@ const chiffres = [
 ];
 
 const realisations = [
+  { label: "Vue aérienne chantier", cat: "Terrassement", src: "/DJI_0040.jpg" },
   { label: "Terrassement grand chantier", cat: "Terrassement", src: "/terrassementgrandchantier.jpg" },
-  { label: "Pose d'enrobé voirie", cat: "Voirie", src: "/posedenrobes.jpg" },
-  { label: "Enrochement soutènement", cat: "Enrochement", src: "/enrochement.jpg" },
+  { label: "Pose d'enrobé voirie", cat: "Voirie", src: "/voirie.jpg" },
+  { label: "Enrochement & consolidation", cat: "Enrochement", src: "/consolidationdeberge.jpg" },
+  { label: "Réseaux assainissement", cat: "Réseaux", src: "/assainissement.jpg" },
+  { label: "Extraction de craie", cat: "Carrière", src: "/carrieredecraie.jpg" },
   { label: "VRD réseaux enterrés", cat: "Réseaux", src: "/vrd.jpg" },
   { label: "Création de bassin", cat: "Terrassement", src: "/creationbassin.jpg" },
   { label: "Aménagement particulier", cat: "Particuliers", src: "/travauxparticuliers.jpg" },
@@ -98,13 +101,13 @@ export default function Home() {
 
             {/* Photo mobile */}
             <div className="lg:hidden relative rounded-2xl overflow-hidden shadow-xl w-full" style={{ height: 220 }}>
-              <Image src="/hero.jpg" alt="Chantier Vilbert TP — terrassement Hauts-de-France" fill priority className="object-cover" sizes="100vw" />
+              <Image src="/DJI_0040.jpg" alt="Vue aérienne chantier Vilbert TP — Hauts-de-France" fill priority className="object-cover" sizes="100vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             </div>
 
             {/* Photo desktop */}
             <div className="hidden lg:block relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: 440 }}>
-              <Image src="/hero.jpg" alt="Chantier Vilbert TP — terrassement Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
+              <Image src="/DJI_0040.jpg" alt="Vue aérienne chantier Vilbert TP — Hauts-de-France" fill priority className="object-cover" sizes="50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 grid grid-cols-4 divide-x divide-white/20 bg-black/30 backdrop-blur-sm">
                 {chiffres.map((s) => (
