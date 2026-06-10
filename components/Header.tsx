@@ -16,9 +16,13 @@ const servicesMenu = [
   {
     category: "🔧 Services spécialisés",
     items: [
-      { label: "Location d'engins avec chauffeur", href: "/location-engins", desc: "Pelle, bulldozer GPS, mini-pelle — CACES" },
+      { label: "Location d'engins avec chauffeur", href: "/location-engins", desc: "Pelle 40T, bulldozer GPS, mini-pelle" },
       { label: "Broyage & Concassage", href: "/broyage-concassage", desc: "Valorisation inertes sur chantier" },
       { label: "Démolition & Valorisation", href: "/demolition-valorisation", desc: "Déconstruction + Vilbert Recyclage" },
+      { label: "Extraction de craie", href: "/extraction-craie", desc: "Remblai, voirie, amendement agricole" },
+      { label: "Balayage de route", href: "/balayage-route", desc: "Nettoyage voirie & chantiers" },
+      { label: "Fouilles archéologiques", href: "/fouilles-archeologiques", desc: "Partenaire INRAP · Zones obus" },
+      { label: "Accompagnement projet", href: "/accompagnement-projet", desc: "Plans, planning, coordination études" },
       { label: "Travaux Particuliers", href: "/travaux-particuliers", desc: "Allée, terrasse, clôtures, assainissement" },
     ],
   },

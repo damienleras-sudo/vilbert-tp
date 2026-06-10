@@ -55,18 +55,19 @@ const prestations = [
   {
     icon: "🚜",
     title: "Location d'engins avec chauffeur",
-    desc: "Pelles hydrauliques 5–20 t, mini-pelles, bulldozer GPS, niveleuses, tombereaux — avec opérateur qualifié CACES. Flotte régulièrement renouvelée, maintenance à jour.",
+    desc: "Pelles hydrauliques 5–40 t, mini-pelles, bulldozer GPS, niveleuses, tombereaux — avec opérateur qualifié CACES. Flotte régulièrement renouvelée, maintenance à jour.",
     img: "/locationenginavecchauffeur.jpg",
   },
 ];
 
 const engins = [
   { nom: "Bulldozer GPS", usage: "Terrassement de précision, profilage grands espaces" },
-  { nom: "Pelles hydrauliques 5–20 t", usage: "Fouilles, terrassement, chargement" },
+  { nom: "Pelles hydrauliques 5–40 t", usage: "Fouilles, terrassement, chargement — jusqu'à 40 tonnes" },
   { nom: "Mini-pelles < 2 t", usage: "Espaces restreints, jardins, milieu urbain" },
   { nom: "Niveleuse", usage: "Profilage de plateforme, voirie" },
   { nom: "Tombereau articulé", usage: "Transport interne de matériaux sur chantier" },
   { nom: "Compacteurs", usage: "Compactage couches de forme et remblais" },
+  { nom: "Camion balayeur", usage: "Nettoyage de voiries et chantiers après travaux" },
   { nom: "Camions benne", usage: "Évacuation terres, approvisionnement matériaux" },
 ];
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const engins = [
   {
-    nom: "Pelles hydrauliques 5 à 20 t",
+    nom: "Pelles hydrauliques 5 à 40 t",
     img: "/locationenginavecchauffeur.jpg",
     usages: ["Terrassement et fouilles", "Chargement de camions", "Démolition légère", "Tranchées réseaux", "Travaux en zone inondable"],
     avantages: "Polyvalentes, disponibles en plusieurs tailles selon votre besoin.",

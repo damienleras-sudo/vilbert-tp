@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact | Devis Gratuit Vilbert TP",
+  title: "Contact | Devis Gratuit Vilbert TP — Terrassement, Voirie, Réseaux",
   description:
     "Contactez Vilbert TP pour un devis gratuit : terrassement, voirie, réseaux, travaux particuliers. Somme (80), Oise (60), Pas-de-Calais (62). ☎ 03 22 93 02 86.",
 };
 
 const horaires = [
-  { jour: "Lundi", heures: "8h00 – 17h00", open: true },
-  { jour: "Mardi", heures: "8h00 – 17h00", open: true },
-  { jour: "Mercredi", heures: "8h00 – 17h00", open: true },
-  { jour: "Jeudi", heures: "8h00 – 17h00", open: true },
-  { jour: "Vendredi", heures: "8h00 – 17h00", open: true },
+  { jour: "Lundi", heures: "9h00 – 12h30 · 13h30 – 17h30", open: true },
+  { jour: "Mardi", heures: "9h00 – 12h30 · 13h30 – 17h30", open: true },
+  { jour: "Mercredi", heures: "9h00 – 12h30 · 13h30 – 17h30", open: true },
+  { jour: "Jeudi", heures: "9h00 – 12h30 · 13h30 – 17h30", open: true },
+  { jour: "Vendredi", heures: "9h00 – 12h30 · 13h30 – 17h30", open: true },
   { jour: "Samedi", heures: "Fermé", open: false },
   { jour: "Dimanche", heures: "Fermé", open: false },
 ];
@@ -51,7 +51,7 @@ export default function ContactPage() {
               <p className="text-4xl font-black tracking-wide group-hover:text-[#f5b800] transition-colors">
                 03 22 93 02 86
               </p>
-              <p className="text-orange-200 text-sm mt-3">Lun – Ven · 8h–17h</p>
+              <p className="text-orange-200 text-sm mt-3">Lun – Ven · 9h–12h30 et 13h30–17h30</p>
             </a>
 
             <a
@@ -68,7 +68,7 @@ export default function ContactPage() {
           </div>
 
           {/* Infos complémentaires */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Adresse */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
               <span className="text-4xl">📍</span>
@@ -83,14 +83,13 @@ export default function ContactPage() {
               >
                 Voir sur Google Maps →
               </a>
-              <p className="text-gray-400 text-xs mt-1">(Accès via la RD938)</p>
             </div>
 
             {/* Horaires */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <div className="text-center">
                 <span className="text-4xl">🕐</span>
-                <h3 className="font-black text-gray-900 mt-3 mb-4">Horaires</h3>
+                <h3 className="font-black text-gray-900 mt-3 mb-4">Horaires bureau</h3>
               </div>
               <table className="w-full text-sm">
                 <tbody className="divide-y divide-gray-100">
@@ -106,18 +105,37 @@ export default function ContactPage() {
               </table>
             </div>
 
-            {/* Zone */}
+            {/* Zone + Réseaux sociaux */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
               <span className="text-4xl">🗺️</span>
               <h3 className="font-black text-gray-900 mt-3 mb-3">Zone d&apos;intervention</h3>
-              <div className="flex flex-wrap gap-2 justify-center">
+              <div className="flex flex-wrap gap-2 justify-center mb-4">
                 {["Somme (80)", "Oise (60)", "Pas-de-Calais (62)"].map(d => (
                   <span key={d} className="bg-[#b5451b] text-white text-xs px-2 py-1 rounded-full">{d}</span>
                 ))}
               </div>
-              <p className="text-gray-500 text-xs mt-3">
+              <p className="text-gray-500 text-xs mb-4">
                 Amiens, Abbeville, Arras, Beauvais, Compiègne et environs
               </p>
+              <div className="border-t border-gray-100 pt-4 space-y-2">
+                <a
+                  href="https://www.facebook.com/p/Groupe-Vilbert-100063776760913/?locale=fr_FR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-[#1877F2] text-white text-xs font-bold px-4 py-2 rounded hover:bg-[#166FE5] transition-colors"
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  Groupe Vilbert sur Facebook
+                </a>
+                <a
+                  href="https://share.google/AiI8apyJiUMyka8p9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-gray-100 text-gray-700 text-xs font-bold px-4 py-2 rounded hover:bg-gray-200 transition-colors"
+                >
+                  ⭐ Laisser un avis Google
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -133,26 +151,8 @@ export default function ContactPage() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Vilbert TP — Beauval 80630"
+          title="Vilbert TP — Talmas 80260"
         />
-      </section>
-
-      {/* AVIS GOOGLE */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-black text-gray-900 mb-4">Nos avis clients</h2>
-          <p className="text-gray-600 mb-6">
-            Retrouvez les avis de nos clients sur Google My Business.
-          </p>
-          <a
-            href="https://share.google/AiI8apyJiUMyka8p9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white border-2 border-[#b5451b] text-[#b5451b] font-bold px-8 py-4 rounded-xl hover:bg-[#b5451b] hover:text-white transition-colors text-lg"
-          >
-            ⭐ Voir les avis Google →
-          </a>
-        </div>
       </section>
 
       {/* CTA FINAL */}
@@ -161,7 +161,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-black text-gray-900 mb-3">
             Votre projet mérite un devis sérieux
           </h2>
-          <p className="text-gray-700 mb-6">Appelez-nous directement — réponse immédiate.</p>
+          <p className="text-gray-700 mb-6">Appelez-nous directement — réponse immédiate pendant les horaires de bureau.</p>
           <a
             href="tel:0322930286"
             className="inline-block bg-gray-900 text-white font-black px-10 py-5 rounded-xl text-2xl hover:bg-gray-800 transition-colors shadow-lg"
