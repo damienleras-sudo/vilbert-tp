@@ -7,24 +7,26 @@ const servicesMenu = [
   {
     category: "🏗️ Travaux Publics",
     items: [
-      { label: "Terrassement", href: "/terrassement", desc: "Fouilles, remblais, évacuation terres" },
-      { label: "Voirie & Aménagement", href: "/voirie", desc: "Enrobé, bordures, pavage, signalisation" },
-      { label: "Réseaux", href: "/reseaux", desc: "Assainissement, eau, gaz, télécom, électricité" },
+      { label: "Terrassement", href: "/terrassement", desc: "Bulldozer GPS, fouilles, remblais, agricole" },
+      { label: "Voirie & Aménagement", href: "/voirie", desc: "Enrobé, bordures, pavage, VRD complet" },
+      { label: "Réseaux", href: "/reseaux", desc: "Assainissement, eau, gaz, électricité, fibre" },
+      { label: "Enrochement", href: "/enrochement", desc: "Littoral, berges, jardins, grands chantiers" },
     ],
   },
   {
-    category: "🏠 Travaux Particuliers",
+    category: "🔧 Services spécialisés",
     items: [
-      { label: "Allée & Terrasse", href: "/travaux-particuliers#amenagements", desc: "Enrobé, béton lavé, pavés" },
-      { label: "Clôtures & Démolition", href: "/travaux-particuliers#clotures", desc: "Pose clôtures, démolition" },
-      { label: "Assainissement individuel", href: "/travaux-particuliers#assainissement", desc: "Fosse septique, puits filtrant, raccordement" },
-      { label: "Drainage & Terrassement", href: "/travaux-particuliers#terrassement", desc: "Nivelage, remblai, drainage" },
+      { label: "Location d'engins avec chauffeur", href: "/location-engins", desc: "Pelle, bulldozer GPS, mini-pelle — CACES" },
+      { label: "Broyage & Concassage", href: "/broyage-concassage", desc: "Valorisation inertes sur chantier" },
+      { label: "Démolition & Valorisation", href: "/demolition-valorisation", desc: "Déconstruction + Vilbert Recyclage" },
+      { label: "Travaux Particuliers", href: "/travaux-particuliers", desc: "Allée, terrasse, clôtures, assainissement" },
     ],
   },
 ];
 
 const navLinks = [
   { label: "Réalisations", href: "/realisations" },
+  { label: "Engagements", href: "/engagements" },
   { label: "Blog", href: "/blog" },
   { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
@@ -99,7 +101,7 @@ export default function Header() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[620px] z-50">
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[760px] z-50">
                 <div className="bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
                   <div className="bg-[#b5451b] px-6 py-3 flex items-center justify-between">
                     <span className="text-white font-bold text-sm">Toutes nos prestations</span>
