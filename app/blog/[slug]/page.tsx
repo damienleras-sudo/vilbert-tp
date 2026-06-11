@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { blogPosts } from "@/lib/blog-posts";
+import SchemaArticle from "@/components/SchemaArticle";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -155,6 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <SchemaArticle post={post} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

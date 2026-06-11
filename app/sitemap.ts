@@ -28,6 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/terrassement-abbeville`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${BASE_URL}/terrassement-peronne`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${BASE_URL}/travaux-publics-somme`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/terrassement-albert`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/terrassement-doullens`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/terrassement-montdidier`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${BASE_URL}/mentions-legales`, priority: 0.4, changeFrequency: "yearly" as const },
+    { url: `${BASE_URL}/confidentialite`, priority: 0.4, changeFrequency: "yearly" as const },
     ...blogPosts.map((p) => ({
       url: `${BASE_URL}/blog/${p.slug}`,
       priority: 0.7,

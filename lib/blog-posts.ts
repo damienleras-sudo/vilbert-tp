@@ -14,6 +14,7 @@ export type BlogPost = {
 
 import { blogPostsExtra } from "./blog-posts-extra";
 import { blogPostsSomme } from "./blog-posts-somme";
+import { blogPostsLocal } from "./blog-posts-local";
 
 const blogPostsBase: BlogPost[] = [
   {
@@ -599,6 +600,6 @@ Oui. La certification MASE est précisément adaptée aux interventions chez des
   },
 ];
 
-export const blogPosts: BlogPost[] = [...blogPostsBase, ...blogPostsExtra, ...blogPostsSomme].sort(
+export const blogPosts: BlogPost[] = [...blogPostsBase, ...blogPostsExtra, ...blogPostsSomme, ...blogPostsLocal].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 );

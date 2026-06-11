@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(git commit *)",
+      "Bash(git add *)",
+      "Bash(vercel *)",
+      "Bash(nslookup *)",
+      "Bash(Resolve-DnsName *)",
+      "Bash(Invoke-WebRequest *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Resolve-DnsName *)",
+      "PowerShell(Invoke-WebRequest *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Rename-Item *)",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__list_deployments",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__get_deployment_build_logs",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__list_projects",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__get_project",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__list_teams",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__get_runtime_logs",
+      "mcp__ff4018c9-ff31-4a64-96a1-742a71c3d2d8__deploy_to_vercel",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
+    ]
+  }
+}

@@ -166,6 +166,7 @@ export default function Footer() {
           <p>© {currentYear} Vilbert TP – Tous droits réservés</p>
           <div className="flex items-center gap-4">
             <Link href="/mentions-legales" className="hover:text-gray-300 transition-colors">Mentions légales</Link>
+            <Link href="/confidentialite" className="hover:text-gray-300 transition-colors">Confidentialité</Link>
             <Link href="/engagements" className="hover:text-gray-300 transition-colors">MASE · Charte CO2</Link>
             <a href="https://www.groupe-vilbert.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
               Groupe Vilbert
